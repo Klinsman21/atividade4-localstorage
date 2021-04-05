@@ -15,19 +15,19 @@
 		<ul>
 			<li>
 				<label for="txtCodigo">Código:</label>
-				<input type="text" id="txtCodigo"/>
+				<input type="text" id="txtCodigo" name="Nome" placeholder="Digite seu codigo 00" onblur="Validate.isCode(this)"/>
 			</li>
 			<li>
 				<label for="txtNome">Nome:</label>
-				<input type="text" id="txtNome"/>
+				<input type="text" id="txtNome" name="Nome" placeholder="Digite seu nome" onblur="Validate.isName(this)"/>
 			</li>
 			<li>
 				<label for="txtTelefone">Telefone:</label>
-				<input type="text" id="txtTelefone"/>
+				<input type="text" id="txtTelefone" name="telefone" placeholder="Digite seu telefone" onkeyup="Mask.isPhone(this)" onblur="Validate.isPhone(this)"/>
 			</li>
 			<li>
 				<label for="txtEmail">Email:</label>
-				<input type="text" id="txtEmail"/>
+				<input type="text" id="txtEmail" name="email" placeholder="Digite seu email" onblur="Validate.isEmail(this)"/>
 			</li>
 			<li>
 				<input type="submit" value="Salvar" id="btnSalvar"/>
