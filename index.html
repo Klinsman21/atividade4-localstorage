@@ -15,23 +15,24 @@
 		<ul>
 			<li>
 				<label for="txtCodigo">Código:</label>
-				<input type="text" id="txtCodigo" title="Código"/>
+				<input type="text" id="txtCodigo" name="Nome" placeholder="Digite seu codigo 00" onblur="Validate.isCode(this)"/>
 			</li>
 			<li>
 				<label for="txtNome">Nome:</label>
-				<input type="text" id="txtNome" title="Nome"/>
+				<input type="text" id="txtNome" name="Nome" placeholder="Digite seu nome" onblur="Validate.isName(this)"/>
 			</li>
 			<li>
 				<label for="txtTelefone">Telefone:</label>
-				<input type="text" id="txtTelefone" placeholder="Ex:(00) 0 0000-0000" title="Telefone"/>
+				<input type="text" id="txtTelefone" name="telefone" placeholder="Digite seu telefone" onkeyup="Mask.isPhone(this)" onblur="Validate.isPhone(this)"/>
 			</li>
 			<li>
 				<label for="txtEmail">Email:</label>
-				<input type="text" id="txtEmail" title="E-mail"/>
+				<input type="text" id="txtEmail" name="email" placeholder="Digite seu email" onblur="Validate.isEmail(this)"/>
+        
+				<input type="text" id="txtCodigo" title="Código"/>
 			</li>
 			<li>
 				<button type="submit" value="Salvar" id="btnSalvar" title="SALVAR"> Salvar </button>
-
       </li>
 
 		</ul>
